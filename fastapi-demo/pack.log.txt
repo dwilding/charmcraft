@@ -1,0 +1,316 @@
+2026-06-26 20:03:35.602 Starting charmcraft, version 0.0.post3376+ge06b1f197
+2026-06-26 20:03:35.602 Log verbosity level set to BRIEF
+2026-06-26 20:03:35.602 Setting up CharmBuildPlanService
+2026-06-26 20:03:35.602 Setting up ProjectService
+2026-06-26 20:03:35.602 Loading project file '/home/david.wilding@canonical.com/gh/charmcraft/dwilding-test-12-factor-v2/fastapi-demo/charmcraft.yaml
+2026-06-26 20:03:35.605 Build plan contains 1 build(s).
+2026-06-26 20:03:35.605 Build plan contains 1 build(s).
+2026-06-26 20:03:35.611 Preparing application...
+2026-06-26 20:03:35.611 Setting up ConfigService
+2026-06-26 20:03:35.611 App is not running as a snap - snap config handler not created.
+2026-06-26 20:03:35.611 Configuring application...
+2026-06-26 20:03:35.611 Getting runtime directory.
+2026-06-26 20:03:35.611 Using '/run/user/1020336102/1976728' for the state directory.
+2026-06-26 20:03:35.611 Setting up StateService
+2026-06-26 20:03:35.611 Setting 'charmcraft.started_at' to '2026-06-26T20:03:35.611880'.
+2026-06-26 20:03:35.612 Loading state file '/run/user/1020336102/1976728/charmcraft.yaml'.
+2026-06-26 20:03:35.612 State file doesn't exist.
+2026-06-26 20:03:35.612 Writing state to '/run/user/1020336102/1976728/charmcraft.yaml'.
+2026-06-26 20:03:35.612 Set 'charmcraft.started_at' to '2026-06-26T20:03:35.611880'.
+2026-06-26 20:03:35.614 Configuring application...
+2026-06-26 20:03:35.614 Setting 'charmcraft.started_at' to '2026-06-26T20:03:35.614651'.
+2026-06-26 20:03:35.614 Loading state file '/run/user/1020336102/1976728/charmcraft.yaml'.
+2026-06-26 20:03:35.615 Overwriting existing value.
+2026-06-26 20:03:35.615 Writing state to '/run/user/1020336102/1976728/charmcraft.yaml'.
+2026-06-26 20:03:35.615 Set 'charmcraft.started_at' to '2026-06-26T20:03:35.614651'.
+2026-06-26 20:03:35.616 Build plan: platform=None, build_for=None
+2026-06-26 20:03:35.617 Running 'charmcraft pack'.
+2026-06-26 20:03:35.617 *EXPERIMENTAL* extension 'fastapi-framework' enabled for base(s): ubuntu@26.04
+2026-06-26 20:03:35.618 Using parallel build count of 14 from CPU count
+2026-06-26 20:03:35.618 Checking if 'version' exists.
+2026-06-26 20:03:35.619 Getting value for 'version'.
+2026-06-26 20:03:35.619 Got None (updated=False) for 'version'.
+2026-06-26 20:03:35.619 'version' exists.
+2026-06-26 20:03:35.619 Getting value for 'version'.
+2026-06-26 20:03:35.619 Got None (updated=False) for 'version'.
+2026-06-26 20:03:35.620 Processing grammar (on amd64 for amd64)
+2026-06-26 20:03:35.620 Processing grammar for plugin: uv
+2026-06-26 20:03:35.620 Processing grammar for source: .
+2026-06-26 20:03:35.620 Processing grammar for build-snaps: ['astral-uv', 'rustup']
+2026-06-26 20:03:35.620 Processing grammar for override-build: rustup default stable
+craftctl default
+2026-06-26 20:03:35.620 Not processing grammar for non-grammar enabled keyword uv-groups
+2026-06-26 20:03:35.622 Checking that charmlibs match 'charmcraft.yaml' values
+2026-06-26 20:03:35.623 Setting up CharmLibsService
+2026-06-26 20:03:35.623 Setting up StoreService
+2026-06-26 20:03:35.972 HTTP 'POST' for 'https://api.charmhub.io/v1/charm/libraries/bulk' with params None and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:39.404 Downloading charmlibs... (--->)
+2026-06-26 20:03:39.404 Library(lib_id='e6de2a5cd5b34422a204668f3b8f90d2', lib_name='ingress', charm_name='traefik-k8s', api=2, patch=21, content=None, content_hash='e98bf8fc90d39ac8cf8ac026600327dd36c5ebc9019e3701b5de73a069345c07')
+2026-06-26 20:03:39.404 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/traefik-k8s/e6de2a5cd5b34422a204668f3b8f90d2' with params {'api': 2, 'patch': 21} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:40.846 Library(lib_id='bced1658f20f49d28b88f61f83c2d232', lib_name='juju_topology', charm_name='observability-libs', api=0, patch=7, content=None, content_hash='266462839d1bba87aa62c80c0a48bb3cfb0846916fa76af5e37a3c0ca5a7dd7a')
+2026-06-26 20:03:40.846 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/observability-libs/bced1658f20f49d28b88f61f83c2d232' with params {'api': 0, 'patch': 7} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:41.679 Library(lib_id='c49eb9c7dfef40c7b6235ebd67010a3f', lib_name='grafana_dashboard', charm_name='grafana-k8s', api=0, patch=50, content=None, content_hash='a394aa037591fe26c6701e4304ef6963c463368f388b2dd9af6850f50b85828c')
+2026-06-26 20:03:41.679 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/grafana-k8s/c49eb9c7dfef40c7b6235ebd67010a3f' with params {'api': 0, 'patch': 50} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:42.983 Library(lib_id='bf76f23cdd03464b877c52bd1d2f563e', lib_name='loki_push_api', charm_name='loki-k8s', api=1, patch=30, content=None, content_hash='4f894f9280ac7dee481b8035fe3044778c2b4898fb18d0deeecb39720e9f0657')
+2026-06-26 20:03:42.983 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/loki-k8s/bf76f23cdd03464b877c52bd1d2f563e' with params {'api': 1, 'patch': 30} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:44.215 Library(lib_id='6c3e6b6680d64e9c89e611d1a15f65be', lib_name='data_interfaces', charm_name='data-platform-libs', api=0, patch=59, content=None, content_hash='36d3f4cb704d47f7af5c7cfa37195dfdb74bcd393c68b92559b05c2e69210168')
+2026-06-26 20:03:44.215 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/data-platform-libs/6c3e6b6680d64e9c89e611d1a15f65be' with params {'api': 0, 'patch': 59} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:45.624 Library(lib_id='bc84295fef5f4049878f07b131968ee2', lib_name='prometheus_scrape', charm_name='prometheus-k8s', api=0, patch=61, content=None, content_hash='298968971306c1a088bfdd54066859572a3fc7f0055a64345bfae9acbaf249b4')
+2026-06-26 20:03:45.624 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/prometheus-k8s/bc84295fef5f4049878f07b131968ee2' with params {'api': 0, 'patch': 61} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:46.477 Library(lib_id='fe18a608cec5465fa5153e419abcad7b', lib_name='redis', charm_name='redis-k8s', api=0, patch=7, content=None, content_hash='2d0c2e44c5ec45b8d24bb7a1391d838451f5a2f8a219aa3727db9fd93dd4d83e')
+2026-06-26 20:03:46.477 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/redis-k8s/fe18a608cec5465fa5153e419abcad7b' with params {'api': 0, 'patch': 7} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:46.977 Library(lib_id='fca396f6254246c9bfa565b1f85ab528', lib_name='s3', charm_name='data-platform-libs', api=0, patch=6, content=None, content_hash='6fc934c70d6259beb0b2ea6e3f9715cb88e0285cc77c7520119d045577391e7d')
+2026-06-26 20:03:46.977 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/data-platform-libs/fca396f6254246c9bfa565b1f85ab528' with params {'api': 0, 'patch': 6} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:47.635 Library(lib_id='511cdfa7de3d43568bf9b512f9c9f89d', lib_name='saml', charm_name='saml-integrator', api=0, patch=11, content=None, content_hash='3faf30784a32f7c8528cfd1558f88aab6bb245a07bca6d517208dcf5a29b8488')
+2026-06-26 20:03:47.635 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/saml-integrator/511cdfa7de3d43568bf9b512f9c9f89d' with params {'api': 0, 'patch': 11} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:48.405 Library(lib_id='d2f02b1f8d1244b5989fd55bc3a28943', lib_name='tracing', charm_name='tempo-coordinator-k8s', api=0, patch=11, content=None, content_hash='538ff687f53ce9710742204d93c13924a1c635541add653e81682c3ead6ca4ae')
+2026-06-26 20:03:48.405 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/tempo-coordinator-k8s/d2f02b1f8d1244b5989fd55bc3a28943' with params {'api': 0, 'patch': 11} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:49.486 Library(lib_id='09583c2f9c1d4c0f9a40244cfc20b0c2', lib_name='smtp', charm_name='smtp-integrator', api=0, patch=21, content=None, content_hash='0969313d1c53d7e453c0bfa53749aa603488e491f48c0bcac9fb59de7896e344')
+2026-06-26 20:03:49.486 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/smtp-integrator/09583c2f9c1d4c0f9a40244cfc20b0c2' with params {'api': 0, 'patch': 21} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:50.175 Library(lib_id='216f28cfeea4447b8a576f01bfbecdf5', lib_name='openfga', charm_name='openfga-k8s', api=1, patch=4, content=None, content_hash='408b303a2f18eb37ff489f59304ec847b83099eb650b611fe48023cfa5ed5d76')
+2026-06-26 20:03:50.175 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/openfga-k8s/216f28cfeea4447b8a576f01bfbecdf5' with params {'api': 1, 'patch': 4} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:50.615 Library(lib_id='a3a301e325e34aac80a2d633ef61fe97', lib_name='oauth', charm_name='hydra', api=0, patch=11, content=None, content_hash='2ee5569604ff552f1e9e75229dcecb281ea6f919d324fb2dc59dcbb7f5308af3')
+2026-06-26 20:03:50.615 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/hydra/a3a301e325e34aac80a2d633ef61fe97' with params {'api': 0, 'patch': 11} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:51.283 Library(lib_id='0dd2d8435fad41ce9a4bcdbda4d9a22d', lib_name='http_proxy', charm_name='squid-forward-proxy', api=0, patch=2, content=None, content_hash='33f550dd67151b6c54dd2ae0d76d4c2082191908c0cb92cc370fd469a0e5dab6')
+2026-06-26 20:03:51.283 HTTP 'GET' for 'https://api.charmhub.io/v1/charm/libraries/squid-forward-proxy/0dd2d8435fad41ce9a4bcdbda4d9a22d' with params {'api': 0, 'patch': 2} and headers {'User-Agent': 'charmcraft/0.0.post3376+ge06b1f197 ubuntu/24.04 (x86_64) python/3.14.0'}
+2026-06-26 20:03:52.269 Downloading charmlibs... (<---)
+2026-06-26 20:03:52.270 Setting up ProviderService
+2026-06-26 20:03:52.270 Setting charmcraft to be installed from the latest/stable channel in the build environment because the application is not running as a snap.
+2026-06-26 20:03:52.271 Running managed charmcraft in managed ubuntu@26.04 instance for platform 'amd64'
+2026-06-26 20:03:52.271 active_fetch_service=False
+2026-06-26 20:03:52.271 Preparing managed instance 'charmcraft-fastapi-demo-amd64-13259697'
+2026-06-26 20:03:52.274 Using hostname 'charmcraft-fastapi-demo-amd64-13259697'
+2026-06-26 20:03:52.274 Not loading snap config because charmcraft is not running as a snap.
+2026-06-26 20:03:52.274 No snap config found.
+2026-06-26 20:03:52.274 Using default provider 'lxd' on linux system.
+2026-06-26 20:03:52.274 Checking if LXD is installed.
+2026-06-26 20:03:52.334 LXD snap status: active
+2026-06-26 20:03:52.334 Checking if LXD is installed.
+2026-06-26 20:03:52.394 LXD snap status: active
+2026-06-26 20:03:52.444 Executing on host: lxc --project default profile show local:default
+2026-06-26 20:03:52.588 Launching managed ubuntu 26.04 instance...
+2026-06-26 20:03:52.588 Executing on host: lxc remote list --format=yaml
+2026-06-26 20:03:52.728 Remote 'craft-com.ubuntu.cloud-buildd' already exists.
+2026-06-26 20:03:52.728 Executing on host: lxc project list local: --format=yaml
+2026-06-26 20:03:52.875 Converted name 'charmcraft-fastapi-demo-amd64-13259697' to instance name 'charmcraft-fastapi-demo-amd64-13259697'
+2026-06-26 20:03:52.880 Checking for instance 'charmcraft-fastapi-demo-amd64-13259697' in project 'charmcraft' in remote 'local'
+2026-06-26 20:03:52.884 Instance 'charmcraft-fastapi-demo-amd64-13259697' does not exist.
+2026-06-26 20:03:52.884 Converted name 'base-instance-charmcraft-buildd-base-v7.1-craft-com.ubuntu.cloud-buildd-resolute' to instance name 'base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb'
+2026-06-26 20:03:52.888 Checking for base instance 'base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb' in project 'charmcraft' in remote 'local'
+2026-06-26 20:03:52.892 Checking validity of instance 'base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb'.
+2026-06-26 20:03:52.892 Executing on host: lxc --project charmcraft info local:base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb
+2026-06-26 20:03:53.042 Executing on host: lxc --project charmcraft info local:base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb
+2026-06-26 20:03:53.189 Executing on host: lxc --project charmcraft config get local:base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb user.craft_providers.status
+2026-06-26 20:03:53.338 Instance 'base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb' is ready.
+2026-06-26 20:03:53.338 Instance is valid.
+2026-06-26 20:03:53.338 Creating instance from base instance
+2026-06-26 20:03:53.338 Creating instance from base instance 'base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb'.
+2026-06-26 20:03:53.338 Executing on host: lxc --project charmcraft list local: --format=yaml
+2026-06-26 20:03:53.562 Executing on host: lxc --project charmcraft copy local:base-instance-charmcraft-buildd-base-v71-2b3c6ad77bdd3de1eefb local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:00.240 Executing on host: lxc --project charmcraft list local: --format=yaml
+2026-06-26 20:04:00.474 Executing on host: lxc --project charmcraft config set local:charmcraft-fastapi-demo-amd64-13259697 raw.idmap 'uid 1020336102 0
+gid 1929176317 0'
+2026-06-26 20:04:00.641 Executing on host: lxc --project charmcraft config get local:charmcraft-fastapi-demo-amd64-13259697 raw.idmap
+2026-06-26 20:04:00.783 Got LXD idmap for instance 'charmcraft-fastapi-demo-amd64-13259697': 'uid 1020336102 0\ngid 1929176317 0'
+2026-06-26 20:04:00.783 Starting instance
+2026-06-26 20:04:00.784 Executing on host: lxc --project charmcraft info local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:00.946 Executing on host: lxc --project charmcraft start local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:01.515 Executing on host: lxc --project charmcraft list local: --format=yaml
+2026-06-26 20:04:01.758 Executing on host: lxc --project charmcraft config set local:charmcraft-fastapi-demo-amd64-13259697 user.craft_providers.status IN_USE
+2026-06-26 20:04:01.899 Executing on host: lxc --project charmcraft file push /tmp/tmpws4569_f local:charmcraft-fastapi-demo-amd64-13259697/etc/hostname --mode=0644
+2026-06-26 20:04:02.112 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/hostname
+2026-06-26 20:04:02.296 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical hostname -F /etc/hostname
+2026-06-26 20:04:02.492 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-06-26 20:04:02.708 Executing on host: lxc --project charmcraft file pull local:charmcraft-fastapi-demo-amd64-13259697/etc/craft-instance.conf /home/david.wilding@canonical.com/tmp15jotony.tmp-craft/tmpum3difdu
+2026-06-26 20:04:02.855 Instance has already been setup.
+2026-06-26 20:04:02.856 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-06-26 20:04:03.029 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-06-26 20:04:03.245 Executing on host: lxc --project charmcraft file pull local:charmcraft-fastapi-demo-amd64-13259697/etc/craft-instance.conf /home/david.wilding@canonical.com/tmpoq89vw84.tmp-craft/tmpawokbcy4
+2026-06-26 20:04:03.405 Instance is compatible with compatibility tag 'charmcraft-buildd-base-v7.1'
+2026-06-26 20:04:03.406 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical bash -c 'echo -n ${XDG_CACHE_HOME:-${HOME}/.cache}'
+2026-06-26 20:04:03.602 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical mkdir -p /root/.cache/pip
+2026-06-26 20:04:03.786 Executing on host: lxc --project charmcraft config device show local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:03.923 Executing on host: lxc --project charmcraft config device add local:charmcraft-fastapi-demo-amd64-13259697 disk-/root/.cache/pip disk source=/home/david.wilding@canonical.com/.cache/charmcraft/charmcraft-buildd-base-v7.1/BuilddBaseAlias.RESOLUTE/pip path=/root/.cache/pip
+2026-06-26 20:04:04.100 Waiting for environment to be ready...
+2026-06-26 20:04:04.100 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-06-26 20:04:04.287 Waiting for networking to be ready...
+2026-06-26 20:04:04.287 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical getent hosts snapcraft.io
+2026-06-26 20:04:05.293 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chmod go+x /root
+2026-06-26 20:04:05.466 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.http
+2026-06-26 20:04:07.144 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.https
+2026-06-26 20:04:07.504 Installing snap 'charmcraft' with channel='latest/stable' and classic=True
+2026-06-26 20:04:07.504 Installing snap 'charmcraft' from store (channel='latest/stable', classic=True).
+2026-06-26 20:04:07.505 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-06-26 20:04:07.720 Executing on host: lxc --project charmcraft file pull local:charmcraft-fastapi-demo-amd64-13259697/etc/craft-instance.conf /home/david.wilding@canonical.com/tmpychjauzm.tmp-craft/tmpzn9g48ih
+2026-06-26 20:04:07.858 Revision found in target: '7940'
+2026-06-26 20:04:07.858 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap refresh charmcraft --channel latest/stable
+2026-06-26 20:04:11.264 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical curl --silent --unix-socket /run/snapd.socket http://localhost/v2/snaps/charmcraft
+2026-06-26 20:04:11.477 Revision after install/refresh: '7940'
+2026-06-26 20:04:11.478 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-06-26 20:04:11.694 Executing on host: lxc --project charmcraft file pull local:charmcraft-fastapi-demo-amd64-13259697/etc/craft-instance.conf /home/david.wilding@canonical.com/tmp11esy8np.tmp-craft/tmpbuwapnpv
+2026-06-26 20:04:11.861 Executing on host: lxc --project charmcraft file push /tmp/tmp1weolpgg local:charmcraft-fastapi-demo-amd64-13259697/etc/craft-instance.conf --mode=0644
+2026-06-26 20:04:12.013 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-06-26 20:04:12.350 Setting instance timezone to match host timezone 'Asia/Shanghai'.
+2026-06-26 20:04:12.350 Executing on host: lxc --project charmcraft config set local:charmcraft-fastapi-demo-amd64-13259697 environment.TZ Asia/Shanghai
+2026-06-26 20:04:12.533 Executing on host: lxc query 'local:/1.0?public'
+2026-06-26 20:04:12.682 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-06-26 20:04:12.894 Executing on host: lxc --project charmcraft config device show local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:13.040 Executing on host: lxc --project charmcraft config device add local:charmcraft-fastapi-demo-amd64-13259697 disk-/root/project disk source=/home/david.wilding@canonical.com/gh/charmcraft/dwilding-test-12-factor-v2/fastapi-demo path=/root/project
+2026-06-26 20:04:13.226 Mounting state directory '/run/user/1020336102/1976728' to '/tmp/craft-state'.
+2026-06-26 20:04:13.227 Executing on host: lxc --project charmcraft config device show local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:13.382 Executing on host: lxc --project charmcraft config device add local:charmcraft-fastapi-demo-amd64-13259697 disk-/tmp/craft-state disk source=/run/user/1020336102/1976728 path=/tmp/craft-state
+2026-06-26 20:04:13.575 Instance launched and working directory mounted
+2026-06-26 20:04:13.575 Pushing bashrc to instance
+2026-06-26 20:04:13.576 Executing on host: lxc --project charmcraft file push /tmp/tmpl5h93ldu local:charmcraft-fastapi-demo-amd64-13259697/root/.bashrc --mode=644
+2026-06-26 20:04:13.725 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /root/.bashrc
+2026-06-26 20:04:13.927 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chmod a+rwx /tmp/craft-state
+2026-06-26 20:04:14.124 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical rm -rf /root/snap/charmcraft/common/cache
+2026-06-26 20:04:14.325 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical mkdir -p /root/.cache
+2026-06-26 20:04:14.512 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical ln -s /root/.cache /root/snap/charmcraft/common/cache
+2026-06-26 20:04:14.699 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /root/pro-services.yaml
+2026-06-26 20:04:14.915 Running in instance: ['charmcraft', 'pack']
+2026-06-26 20:04:14.915 Setting up ProxyService
+2026-06-26 20:04:14.915 Skipping package configuration because the proxy service isn't configured.
+2026-06-26 20:04:14.915 Emitter: Pausing control of the terminal
+2026-06-26 20:04:21.156 Emitter: Resuming control of the terminal
+2026-06-26 20:04:21.157 Executing in container: lxc --project charmcraft exec local:charmcraft-fastapi-demo-amd64-13259697 -- env CRAFT_MANAGED_MODE=1 CHARMCRAFT_DEBUG=False CHARMCRAFT_LXD_REMOTE=local CHARMCRAFT_LAUNCHPAD_INSTANCE=production CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true CHARMCRAFT_MANAGED_MODE=1 DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /tmp/charmcraft.log
+2026-06-26 20:04:21.372 Executing on host: lxc --project charmcraft file pull local:charmcraft-fastapi-demo-amd64-13259697/tmp/charmcraft.log /home/david.wilding@canonical.com/tmpq7p1vukk.tmp-craft/tmpa_lad3nl
+2026-06-26 20:04:21.522 Logs retrieved from managed instance:
+:: 2026-06-26 20:04:20.727 Starting charmcraft, version 4.2.2
+:: 2026-06-26 20:04:20.727 Log verbosity level set to BRIEF
+:: 2026-06-26 20:04:20.727 Setting up CharmBuildPlanService
+:: 2026-06-26 20:04:20.727 Setting up ProjectService
+:: 2026-06-26 20:04:20.727 Loading project file '/root/project/charmcraft.yaml
+:: 2026-06-26 20:04:20.736 Build plan contains 1 build(s).
+:: 2026-06-26 20:04:20.737 Build plan contains 1 build(s).
+:: 2026-06-26 20:04:20.751 Preparing application...
+:: 2026-06-26 20:04:20.751 Setting up ConfigService
+:: 2026-06-26 20:04:20.752 Configuring application...
+:: 2026-06-26 20:04:20.768 Build plan: platform=amd64, build_for=None
+:: 2026-06-26 20:04:20.769 Running charmcraft pack on host
+:: 2026-06-26 20:04:20.771 Using parallel build count of 14 from CPU count
+:: 2026-06-26 20:04:20.772 Checking if 'version' exists.
+:: 2026-06-26 20:04:20.772 Getting value for 'version'.
+:: 2026-06-26 20:04:20.772 Got None (updated=False) for 'version'.
+:: 2026-06-26 20:04:20.772 'version' exists.
+:: 2026-06-26 20:04:20.772 Getting value for 'version'.
+:: 2026-06-26 20:04:20.772 Got None (updated=False) for 'version'.
+:: 2026-06-26 20:04:20.773 Processing grammar (on amd64 for amd64)
+:: 2026-06-26 20:04:20.773 Processing grammar for plugin: charm
+:: 2026-06-26 20:04:20.773 Processing grammar for source: .
+:: 2026-06-26 20:04:20.773 Processing grammar for build-snaps: ['rustup']
+:: 2026-06-26 20:04:20.773 Processing grammar for override-build: rustup default stable
+:: craftctl default
+:: 2026-06-26 20:04:20.780 charmcraft internal error: 1 validation error for PlatformCharm
+:: 2026-06-26 20:04:20.780 parts
+:: 2026-06-26 20:04:20.780   Value error, Cannot use 'charm' or 'reactive' plugins with base 'ubuntu@26.04' [type=value_error, input_value={'charm': {'plugin': 'cha...ble\ncraftctl default'}}, input_type=dict]
+:: 2026-06-26 20:04:20.780     For further information visit https://errors.pydantic.dev/2.12/v/value_error
+:: 2026-06-26 20:04:20.794 Traceback (most recent call last):
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_application/application.py", line 678, in run
+:: 2026-06-26 20:04:20.794     return_code = self._run_inner()
+:: 2026-06-26 20:04:20.794                   ^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/charmcraft/application/main.py", line 165, in _run_inner
+:: 2026-06-26 20:04:20.794     return super()._run_inner()
+:: 2026-06-26 20:04:20.794            ^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_application/application.py", line 655, in _run_inner
+:: 2026-06-26 20:04:20.794     return_code = dispatcher.run() or os.EX_OK
+:: 2026-06-26 20:04:20.794                   ^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_cli/dispatcher.py", line 576, in run
+:: 2026-06-26 20:04:20.794     return self._loaded_command.run(self._parsed_command_args)
+:: 2026-06-26 20:04:20.794            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_application/commands/base.py", line 222, in run
+:: 2026-06-26 20:04:20.794     result = self._run(parsed_args, **kwargs) or result
+:: 2026-06-26 20:04:20.794              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/charmcraft/application/commands/lifecycle.py", line 163, in _run
+:: 2026-06-26 20:04:20.794     project = cast(models.CharmcraftProject, self._services.get("project").get())
+:: 2026-06-26 20:04:20.794                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_application/services/project.py", line 608, in get
+:: 2026-06-26 20:04:20.794     self._project_model = self.render_for(
+:: 2026-06-26 20:04:20.794                           ^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.794   File "/snap/charmcraft/7940/lib/python3.12/site-packages/craft_application/services/project.py", line 553, in render_for
+:: 2026-06-26 20:04:20.794     project_model = self._app.ProjectClass.from_yaml_data(
+:: 2026-06-26 20:04:20.795                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.795   File "/snap/charmcraft/7940/lib/python3.12/site-packages/charmcraft/models/project.py", line 262, in from_yaml_data
+:: 2026-06-26 20:04:20.795     return cls.unmarshal(data)
+:: 2026-06-26 20:04:20.795            ^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.795   File "/snap/charmcraft/7940/lib/python3.12/site-packages/charmcraft/models/project.py", line 248, in unmarshal
+:: 2026-06-26 20:04:20.795     return PlatformCharm.unmarshal(data)
+:: 2026-06-26 20:04:20.795            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.795   File "/snap/charmcraft/7940/lib/python3.12/site-packages/charmcraft/models/project.py", line 243, in unmarshal
+:: 2026-06-26 20:04:20.795     return cls.model_validate(data)
+:: 2026-06-26 20:04:20.795            ^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.795   File "/snap/charmcraft/7940/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+:: 2026-06-26 20:04:20.795     return cls.__pydantic_validator__.validate_python(
+:: 2026-06-26 20:04:20.795            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:: 2026-06-26 20:04:20.795 pydantic_core._pydantic_core.ValidationError: 1 validation error for PlatformCharm
+:: 2026-06-26 20:04:20.795 parts
+:: 2026-06-26 20:04:20.795   Value error, Cannot use 'charm' or 'reactive' plugins with base 'ubuntu@26.04' [type=value_error, input_value={'charm': {'plugin': 'cha...ble\ncraftctl default'}}, input_type=dict]
+:: 2026-06-26 20:04:20.795     For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2026-06-26 20:04:21.532 Executing on host: lxc --project charmcraft config device show local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:21.680 Executing on host: lxc --project charmcraft config device remove local:charmcraft-fastapi-demo-amd64-13259697 disk-/root/.cache/pip
+2026-06-26 20:04:21.871 Executing on host: lxc --project charmcraft config device remove local:charmcraft-fastapi-demo-amd64-13259697 disk-/root/project
+2026-06-26 20:04:22.060 Executing on host: lxc --project charmcraft config device remove local:charmcraft-fastapi-demo-amd64-13259697 disk-/tmp/craft-state
+2026-06-26 20:04:22.254 Executing on host: lxc --project charmcraft stop local:charmcraft-fastapi-demo-amd64-13259697
+2026-06-26 20:04:26.337 Executing on host: lxc --project charmcraft list local: --format=yaml
+2026-06-26 20:04:26.569 Executing on host: lxc --project charmcraft config set local:charmcraft-fastapi-demo-amd64-13259697 user.craft_providers.status FINISHED
+2026-06-26 20:04:26.740 Failed to run charmcraft in instance
+2026-06-26 20:04:26.746 Traceback (most recent call last):
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/services/provider.py", line 586, in run_managed
+2026-06-26 20:04:26.746     instance.execute_run(
+2026-06-26 20:04:26.746     ~~~~~~~~~~~~~~~~~~~~^
+2026-06-26 20:04:26.746         list(command),
+2026-06-26 20:04:26.746         ^^^^^^^^^^^^^^
+2026-06-26 20:04:26.746     ...<2 lines>...
+2026-06-26 20:04:26.746         env=env,
+2026-06-26 20:04:26.746         ^^^^^^^^
+2026-06-26 20:04:26.746     )
+2026-06-26 20:04:26.746     ^
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_providers/lxd/lxd_instance.py", line 279, in execute_run
+2026-06-26 20:04:26.746     return self.lxc.exec(
+2026-06-26 20:04:26.746            ~~~~~~~~~~~~~^
+2026-06-26 20:04:26.746         instance_name=self.instance_name,
+2026-06-26 20:04:26.746         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.746     ...<7 lines>...
+2026-06-26 20:04:26.746         **kwargs,
+2026-06-26 20:04:26.746         ^^^^^^^^^
+2026-06-26 20:04:26.746     )
+2026-06-26 20:04:26.746     ^
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_providers/lxd/lxc.py", line 536, in exec
+2026-06-26 20:04:26.746     return runner(final_cmd, timeout=timeout, check=check, **kwargs)
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/.local/share/uv/python/cpython-3.14.0-linux-x86_64-gnu/lib/python3.14/subprocess.py", line 577, in run
+2026-06-26 20:04:26.746     raise CalledProcessError(retcode, process.args,
+2026-06-26 20:04:26.746                              output=stdout, stderr=stderr)
+2026-06-26 20:04:26.746 subprocess.CalledProcessError: Command '['lxc', '--project', 'charmcraft', 'exec', 'local:charmcraft-fastapi-demo-amd64-13259697', '--cwd', '/root/project', '--', 'env', 'CRAFT_MANAGED_MODE=1', 'CHARMCRAFT_DEBUG=False', 'CHARMCRAFT_LXD_REMOTE=local', 'CHARMCRAFT_LAUNCHPAD_INSTANCE=production', 'CHARMCRAFT_ENABLE_EXPERIMENTAL_EXTENSIONS=true', 'CHARMCRAFT_MANAGED_MODE=1', 'DEBIAN_FRONTEND=noninteractive', 'DEBCONF_NONINTERACTIVE_SEEN=true', 'DEBIAN_PRIORITY=critical', 'CRAFT_PLATFORM=amd64', 'CRAFT_VERBOSITY_LEVEL=BRIEF', 'charmcraft', 'pack']' returned non-zero exit status 70.
+2026-06-26 20:04:26.746
+2026-06-26 20:04:26.746 The above exception was the direct cause of the following exception:
+2026-06-26 20:04:26.746 Traceback (most recent call last):
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/application.py", line 552, in run
+2026-06-26 20:04:26.746     return_code = self._run_inner()
+2026-06-26 20:04:26.746   File "/home/david.wilding@canonical.com/gh/charmcraft/dwilding-test-12-factor-v2/charmcraft/application/main.py", line 176, in _run_inner
+2026-06-26 20:04:26.747     return super()._run_inner()
+2026-06-26 20:04:26.747            ~~~~~~~~~~~~~~~~~~^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/application.py", line 537, in _run_inner
+2026-06-26 20:04:26.747     dispatcher_return = dispatcher.run()
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_cli/dispatcher.py", line 576, in run
+2026-06-26 20:04:26.747     return self._loaded_command.run(self._parsed_command_args)
+2026-06-26 20:04:26.747            ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/commands/base.py", line 180, in run
+2026-06-26 20:04:26.747     result = self._run(parsed_args, **kwargs) or result
+2026-06-26 20:04:26.747              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/gh/charmcraft/dwilding-test-12-factor-v2/charmcraft/application/commands/lifecycle.py", line 178, in _run
+2026-06-26 20:04:26.747     result = super()._run(parsed_args, step_name, **kwargs)
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/commands/lifecycle.py", line 669, in _run
+2026-06-26 20:04:26.747     return super()._run(parsed_args=parsed_args, step_name=step_name)
+2026-06-26 20:04:26.747            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/commands/lifecycle.py", line 270, in _run
+2026-06-26 20:04:26.747     self._run_manager_for_build_plan(fetch_service_policy)
+2026-06-26 20:04:26.747     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/commands/lifecycle.py", line 119, in _run_manager_for_build_plan
+2026-06-26 20:04:26.747     provider.run_managed(build, bool(fetch_service_policy))
+2026-06-26 20:04:26.747     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-06-26 20:04:26.747   File "/home/david.wilding@canonical.com/.cache/uv/archive-v0/-03qR4m-noWzrwle/lib/python3.14/site-packages/craft_application/services/provider.py", line 593, in run_managed
+2026-06-26 20:04:26.747     raise craft_providers.ProviderError(
+2026-06-26 20:04:26.747         f"Failed to run {self._app.name} in instance"
+2026-06-26 20:04:26.747     ) from exc
+2026-06-26 20:04:26.747 craft_providers.errors.ProviderError: Failed to run charmcraft in instance
+2026-06-26 20:04:26.747 Full execution log: '/home/david.wilding@canonical.com/.local/state/charmcraft/log/charmcraft-20260626-200335.600755.log'
